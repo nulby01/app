@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Ide Kreatif - Website Serba Ada</title>
+</head>
+<body>
+    <header>
+        <h1>Ide Kreatif</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <ol>
+                <li>Mulai jurnal syukur harian untuk menghargai hal kecil di hidupmu.</li>
+                <li>Buat karya seni dari bahan daur ulang di rumah.</li>
+                <li>Eksperimen dengan resep baru yang belum pernah kamu coba sebelumnya.</li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Awesome Flask App</p>
+    </footer>
+</body>
+</html>

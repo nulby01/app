@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>About - Website Serba Ada</title>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Selamat Datang di Halaman About!</h2>
+            <p>Kami di sini untuk berbagi hal-hal menarik yang mungkin belum kamu ketahui. Yuk, jelajahi dunia dengan fakta-fakta seru dan inspirasi yang bisa bikin harimu lebih berwarna!</p>
+
+            <!-- Link ke Halaman Fakta Dunia -->
+            <section>
+                <h3><a href="{{ url_for('fakta_dunia') }}">🌍 Fakta Unik Dunia</a></h3>
+                <p>Klik untuk mengetahui fakta-fakta menarik tentang dunia kita!</p>
+            </section>
+
+            <!-- Link ke Halaman Kutipan Inspiratif -->
+            <section>
+                <h3><a href="{{ url_for('kutipan_inspiratif') }}">✨ Kutipan Inspiratif</a></h3>
+                <p>Klik untuk mendapatkan kutipan yang bisa menginspirasimu!</p>
+            </section>
+
+            <!-- Link ke Halaman Ide Kreatif -->
+            <section>
+                <h3><a href="{{ url_for('ide_kreatif') }}">💡 Ide Kreatif</a></h3>
+                <p>Klik untuk mengeksplorasi ide-ide kreatif yang bisa kamu coba!</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Awesome Flask App</p>
+    </footer>
+</body>
+</html>
